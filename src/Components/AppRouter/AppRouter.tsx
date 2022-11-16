@@ -8,6 +8,7 @@ export const AppRouter = () => {
       {routes.map(route => (
         <Route 
           path={route.path}
+          key={route.path}
           element={<route.component />}
         >
         </Route>

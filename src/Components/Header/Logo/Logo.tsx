@@ -10,7 +10,6 @@ interface Props {
 
 export const Logo: React.FC <Props> = ({setMenuIsOpened, color}) => {
   const page = useLocation();
-  console.log(color)
   return (
     <div className='logo'>
     <Link

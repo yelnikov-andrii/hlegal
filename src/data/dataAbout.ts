@@ -37,27 +37,35 @@ export const mainInfoList = [
 
 export const achievements = [
   {
-    img: achievement1
+    img: achievement1,
+    id: 1,
   },
   {
     img: achievement2,
+    id: 2,
   },
   {
-    img: achievement3
+    img: achievement3,
+    id: 3,
   },
   {
-    img: achievement4
+    img: achievement4,
+    id: 4,
   },
   {
-    img: achievement5
+    img: achievement5,
+    id: 5,
   },
   {
     img: achievement6,
+    id: 6,
   },
   {
-    img: achievement7
+    img: achievement7,
+    id: 7,
   },
   {
-    img: achievement8
+    img: achievement8,
+    id: 8,
   }
 ]

@@ -20,7 +20,7 @@ export const Achievements: React.FC = () => {
         className="achievements__swiper"
       >
           {achievements.map(achievement => (
-            <SwiperSlide className='achievements__item'>
+            <SwiperSlide className='achievements__item' key={achievement.id}>
               <img src={achievement.img} alt=""/>
             </SwiperSlide>
             ))}
@@ -33,7 +33,7 @@ export const Achievements: React.FC = () => {
         className="achievements__swiper--mobile"
       >
           {achievements.map(achievement => (
-            <SwiperSlide className='achievements__item'>
+            <SwiperSlide className='achievements__item' key={achievement.id}>
               <div className='achievements__itemWrapper'>
                 <img src={achievement.img} alt=""/>
               </div>

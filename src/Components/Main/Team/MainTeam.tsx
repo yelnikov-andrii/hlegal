@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { teamMembers } from '../../../data/dataTeam';
+import { Link } from 'react-router-dom';
 
 export const MainTeam: React.FC = () => {
   return (
@@ -21,9 +22,18 @@ export const MainTeam: React.FC = () => {
           <img src={teamMember.img} alt=""/>
           </div>
           <div className='main-team__description'>
-            <a className='main__link' href='#team'>
+            <Link className='main__link' to='/team'>
               Команда
-            </a>
+              <svg 
+                width="12" 
+                height="13" 
+                viewBox="0 0 12 13" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" strokeWidth="2"/>
+              </svg>
+            </Link>
             <h2 className='main-team__header'>
               {teamMember.title}
             </h2>

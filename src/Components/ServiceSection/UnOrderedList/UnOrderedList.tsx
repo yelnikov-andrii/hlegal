@@ -8,7 +8,7 @@ export const UnOrderedList: React.FC <Props> = ({list}) => {
   return (
     <ul className='service__list unordered-list'>
       {list.map(item => (
-        <li className='unordered-list__item'>
+        <li className='unordered-list__item' key={item}>
           <span className='unordered-list__txt'>
             {item}
           </span>

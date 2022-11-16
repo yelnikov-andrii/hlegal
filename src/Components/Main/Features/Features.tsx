@@ -1,5 +1,6 @@
 import React from 'react';
 import { ServicesSection } from '../../ServicesSection/ServicesSection';
+import { Link } from 'react-router-dom';
 
 export const Features: React.FC = () => {
   const featuresArr = [
@@ -29,9 +30,18 @@ export const Features: React.FC = () => {
         </div>
       </div>
       <div>
-        <a className='main__link' href='#services'>
-          Services
-        </a>
+        <Link className='main__link' to='/services'>
+          Services 
+          <svg 
+            width="12" 
+            height="13" 
+            viewBox="0 0 12 13" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" strokeWidth="2"/>
+          </svg>
+        </Link>
         <ServicesSection />
       </div>
     </main>

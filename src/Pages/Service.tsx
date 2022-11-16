@@ -5,6 +5,13 @@ import { PublicationsMain } from '../Components/Main/Publications/PublicationsMa
 import { ServiceSection } from '../Components/ServiceSection/ServiceSection';
 
 export const Service: React.FC = () => {
+  React.useEffect(()=>{
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }, []);
   return (
     <div>
       <div className='services__topBlock'>

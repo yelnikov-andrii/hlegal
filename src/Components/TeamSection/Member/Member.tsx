@@ -38,7 +38,7 @@ export const Member: React.FC <Props> = ({member}) => {
         </h4>
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="16" cy="16" r="16" fill="#F5F5FA"/>
-          <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke={!isHover ? "#24A3FF" : "#F0145A"} stroke-width="2"/>
+          <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke={!isHover ? "#24A3FF" : "#F0145A"} strokeWidth="2"/>
         </svg>
       </Link>
       <p className='member__position'>
