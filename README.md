@@ -1,2 +1,2 @@
 
-[DEMO](https://yelnikov-andrii.github.io/hlegal/);
+[DEMO](https://yelnikov-andrii.github.io/hlegal/)
