@@ -1,0 +1,27 @@
+.language {
+  width: 33px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color_basic_white;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--gray {
+    color: $color_text;
+  }
+
+  &--active {
+    background: $color_accent;
+    color: $color_basic_white;
+    border-radius: 8px;
+  }
+}

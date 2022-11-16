@@ -1,0 +1,70 @@
+.main-team {
+  padding: 80px 0 60px;
+  background-color: $color_basic_white;
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .swiper-wrapper {
+    margin-bottom: 46px;
+  }
+
+  &__slide {
+    display: flex;
+    gap: 30px;
+    background: $color_bg;
+
+    @include onTablet {
+      flex-direction: column;
+    }
+  }
+
+  &__photo {
+    img {
+      max-width: 400px;
+    }
+    @include onTablet {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+      }
+    }
+  }
+
+  &__description {
+    padding: 30px 0;
+
+    @include onTablet {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+
+  &__header {
+    @extend %h1FontStyle;
+    margin: 0 0 30px 0;
+    background: $gradient_red_text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__name {
+    @extend %h4FontStyle;
+    color: $color_text;
+    margin: 0 0 6px 0;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color_text;
+    margin: 0;
+  }
+}

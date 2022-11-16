@@ -1,0 +1,15 @@
+.unordered-list {
+  color: $color_accent;
+
+  &__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__txt {
+    color: $color_basic_white;
+  }
+}

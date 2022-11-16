@@ -1,0 +1,66 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+
+  @include onTablet {
+    order: 2;
+  }
+
+  @include onMobile {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  &__link {
+    margin-right: auto;
+    
+    @include onTablet {
+      order: 2;
+    }
+
+    @include onMobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include onMobile {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__logoBlock {
+    display: flex;
+    
+    @include onTablet {
+      order: 2;
+    }
+  }
+
+  &__page {
+    color: $main_color;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+
+    &--services {
+      color: $color_basic_white;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__slash {
+    @include onMobile {
+      width: 11px;
+      height: 22px;
+    }
+  }
+}

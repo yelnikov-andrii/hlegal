@@ -1,0 +1,38 @@
+.publication-main {
+  padding: 0 0 30px 0;
+  background: $color_basic_white;
+
+  &__img {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  &__name {
+    @extend %h4FontStyle;
+    color: $color_regular;
+    margin: 0 0 15px 0;
+    padding: 0 30px;
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color_text;
+    padding-bottom: 15px;
+    border-bottom: 4px solid $color_separator;
+    margin: 0 30px 15px 30px;
+    padding: 0 0 15px 0;
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color_basic_black;
+    margin: 0;
+    padding: 0 30px;
+  }
+}

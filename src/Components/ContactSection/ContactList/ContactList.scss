@@ -1,0 +1,59 @@
+.contactList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    padding-bottom: 30px;
+    border-bottom: 4px solid $color_separator;
+
+    &:nth-child(2) {
+      padding-top: 30px;
+    }
+
+    &:nth-child(3) {
+      padding-top: 30px;
+      display: flex;
+      padding-bottom: 0;
+      border-bottom: 0;
+
+      &:hover {
+        .contactList__txt {
+          color: $color_accent;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: $main_color;
+    text-decoration: none;
+    margin: 0 0 15px 0;
+    display: inline-block;
+
+    &--email {
+      color: $color_regular;
+    }
+  }
+
+  &__txt {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color_regular;
+    max-width: 105px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  &__facebook {
+    display: inline-flex;
+    text-decoration: none;
+
+  }
+}

@@ -1,0 +1,23 @@
+.menuOpener {
+  display: none;
+
+  @include onMobile {
+    display: block;
+    margin-left: auto;
+    order: 2;
+
+    &__icon--active {
+      display: none;
+    }
+
+    &:hover {
+      &__icon {
+        display: none;
+      }
+
+      &__icon--active {
+        display: inline-block;
+      }
+    }
+  }
+}

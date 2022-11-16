@@ -1,0 +1,69 @@
+.features {
+  padding: 0 0 60px 0;
+  margin: 0 0 80px 0;
+
+  &__blockIdeaServices {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 75px;
+
+    @include onTablet {
+      flex-direction: column;
+    }
+
+    @include onMobile {
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 60px 5px 0;
+    margin: 0;
+    text-align: right;
+    min-width: 440px;
+
+    @include onTablet {
+      flex-direction: row;
+      border-right: none;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+      padding: 5px 5px 60px 0;
+    }
+
+    @include onMobile {
+      padding: 0 0 30px 0;
+    }
+  }
+
+  &__item {
+    @extend %h1FontStyle;
+    color: $color_text;
+
+    @include onTablet {
+      white-space: nowrap;
+    }
+
+    &:hover {
+      color: $color_accent;
+    }
+  }
+
+  &__titleh2 {
+    @extend %h2FontStyle;
+    color: $color_basic_white;
+    margin: 0 0 30px 0;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: $color_basic_white;
+    margin: 0;
+  }
+}

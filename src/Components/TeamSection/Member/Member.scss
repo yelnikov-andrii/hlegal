@@ -1,0 +1,36 @@
+.member {
+  &__img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 0 15px 0;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+
+      .member__name {
+        color: $color_accent;
+      }
+    }
+  }
+
+  &__name {
+    margin: 0 0 5px 0;
+    @extend %h4FontStyle;
+    color: $main_color;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color_text;
+    margin: 0;
+  }
+}

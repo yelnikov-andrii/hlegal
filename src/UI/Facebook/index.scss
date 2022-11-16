@@ -1,0 +1,23 @@
+.facebook {
+  position: relative;
+  padding: 0 0 0 12px;
+  @extend %flexCenter;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  &--gray {
+    &:before {
+      background-color: $color_text;
+    }
+  }
+}

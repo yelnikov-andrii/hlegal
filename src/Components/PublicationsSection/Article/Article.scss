@@ -1,0 +1,43 @@
+.article {
+  background: $color_basic_white;
+
+  &__img {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &__wrapper {
+    padding: 0 30px;
+  }
+
+  &__name {
+    @extend %h4FontStyle;
+    color: $color_regular;
+    margin: 0 0 15px 0;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      color: $color_accent;
+    }
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color_text;
+    padding-bottom: 15px;
+    border-bottom: 4px solid $color_separator;
+    margin: 0 0 15px 0;
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

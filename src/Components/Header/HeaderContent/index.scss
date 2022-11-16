@@ -1,0 +1,14 @@
+@import '../Languages/index.scss';
+@import '../Contacts/index.scss';
+
+.header-content {
+  max-width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @include onMobile {
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}

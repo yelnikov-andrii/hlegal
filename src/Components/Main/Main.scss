@@ -1,0 +1,44 @@
+@import './Features';
+@import './Team';
+@import './Trust';
+@import './Publications';
+
+.main {
+  padding: 0 0 40px 0;
+  background: $color_bg;
+
+  &__topBlock {
+    background: $gradient_supersoft;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      content: '';
+      background-image: url(../../images/Symbol.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 872px;
+      height: 1000px;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  &__header {
+    margin: 360px 0 550px 0;
+    @extend %h1FontStyle;
+    color: $color_basic_white;
+    text-align: center;
+  }
+
+  &__link {
+    @extend %h3FontStyleCaps;
+    color: $color_regular;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+  }
+}

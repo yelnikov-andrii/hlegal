@@ -1,0 +1,39 @@
+.navheader {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  width: 100%;
+
+  @include onTablet {
+    order: 3;
+    justify-content: flex-start;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+
+  &__link {
+    @extend %h4FontStyle;
+    color: $color_basic_white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color_hover;
+    }
+
+    &--blue {
+      color: $color_regular;
+    }
+
+    &--active {
+      color: $color_accent;
+      padding-bottom: 3px;
+      border-bottom: 2px solid $color_accent;
+
+      &:hover {
+        color: $color_accent;
+      }
+    }
+  }
+}

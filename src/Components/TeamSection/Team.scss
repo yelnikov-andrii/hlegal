@@ -1,0 +1,35 @@
+@import './Member/Member.scss';
+
+.team {
+  padding: 60px 0;
+
+  &__header {
+    @extend %h1FontStyle;
+    background: $gradient_red_text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__member {
+    width: calc((100% - 120px) / 3);
+
+    @include onTablet {
+      width: calc((100% - 60px) / 2);
+    }
+
+    @include onMobile {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.achievements {
+  padding: 30px 0;
+  background: $color_bg;
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .swiper-wrapper {
+    margin-bottom: 46px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0;
+}
+
+  &__header {
+    @extend %h3FontStyleCaps;
+    color: $main_color;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  &__item {
+    @extend %flexCenter;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__itemWrapper {
+    width: 70%;
+    padding: 25px 0;
+    background: $color_basic_white;
+    @extend %flexCenter;
+  }
+
+  &__swiper {
+    @include onMobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include onMobile {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.trust {
+  padding: 60px 0 90px 0;
+
+  @include onDeskTop {
+    padding: 0 0 30px 0;
+  }
+
+  .container {
+    padding: 0;
+    max-width: 1720px;
+  }
+
+  &__header {
+    @extend %h3FontStyleCaps;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  &__companies {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include onMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__company {
+    width: 25%;
+
+    @include onTablet {
+      width: calc(100% / 3);
+    }
+
+    @include onMobile {
+      width: 100%;
+    }
+  }
+}

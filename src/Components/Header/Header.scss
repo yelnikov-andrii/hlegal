@@ -1,0 +1,21 @@
+@import './Logo/index.scss';
+@import './HeaderContent/index.scss';
+@import './MobileMenu/index.scss';
+@import './NavHeader/index.scss';
+@import './MenuOpener/index.scss';
+
+.header {
+  padding: 50px 0 0 0;
+  color: $color_basic_white;
+  
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    @include onTablet {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

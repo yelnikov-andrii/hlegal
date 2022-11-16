@@ -1,0 +1,58 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+%h1FontStyle {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+
+  @include onMobile {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+%h2FontStyle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+
+  @include onMobile {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+%h3FontStyle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+%h3FontStyleCaps {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+%h4FontStyle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+%paragraphFontStyle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

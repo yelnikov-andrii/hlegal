@@ -1,0 +1,39 @@
+@import './utils/index.scss';
+@import './UI/index.scss';
+@import './Components/Header/Header.scss';
+@import './Components/Main/Main.scss';
+@import './Components/Footer/Footer.scss';
+@import './Components/AboutSection/AboutSection.scss';
+@import './Components/TeamSection/Team.scss';
+@import './Components/TeamEntrySection/TeamEntry.scss';
+@import './Components/ContactSection/ContactSection.scss';
+@import './Components/PublicationsSection/Publications.scss';
+@import './Components/PublicatonSection/PublicationSection.scss';
+@import './Components/ServicesSection/ServicesSection.scss';
+@import './Components/ServiceSection/ServiceSection.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 160px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @include onDeskTop {
+    padding: 0 60px;
+  }
+
+  @include onMobile {
+    padding: 0 15px;
+  }
+}

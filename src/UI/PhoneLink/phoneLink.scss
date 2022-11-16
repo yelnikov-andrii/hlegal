@@ -1,0 +1,62 @@
+.phoneLink {
+  width: 100%;
+  @extend %flexCenter;
+  box-sizing: border-box;
+  padding: 0 0 0 12px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    color: $color_accent;
+  }
+
+  &:before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &--header {
+    color: $color_basic_white;
+
+    &::before {
+      background-color: $color_basic_white;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+  }
+
+  &--footer {
+    color: $main_color;
+
+    &::before {
+      background-color: $color_text;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+  }
+
+  &--gray {
+    color: $color_text;
+
+    &::before {
+      background: $color_text;
+    }
+  }
+}
