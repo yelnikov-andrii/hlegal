@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/hlegal/static/css/main.38272802.css",
+    "main.js": "/hlegal/static/js/main.f9083735.js",
+    "static/media/Team.png": "/hlegal/static/media/Team.d536efc31e9e12132be4.png",
+    "static/media/Team-3.png": "/hlegal/static/media/Team-3.585ae34f0b7d48c50a06.png",
+    "static/media/Team-6.png": "/hlegal/static/media/Team-6.c99956def58a750e41e9.png",
+    "static/media/Team-5.png": "/hlegal/static/media/Team-5.8a50d8bf92f459a947e9.png",
+    "static/media/Team-4.png": "/hlegal/static/media/Team-4.e1cbb37cd555e0a42cf5.png",
+    "static/media/Team-2.png": "/hlegal/static/media/Team-2.92164cbefe9caa502945.png",
+    "static/media/Publication-3.png": "/hlegal/static/media/Publication-3.e75d77565a7187cde730.png",
+    "static/media/Publication-5.png": "/hlegal/static/media/Publication-5.afefa3584bae30cb1222.png",
+    "static/media/Publication-1.png": "/hlegal/static/media/Publication-1.9e771df95470fd1ed111.png",
+    "static/media/Publication-4.png": "/hlegal/static/media/Publication-4.ad313041b6cd96f7b8ed.png",
+    "static/media/Team-1.png": "/hlegal/static/media/Team-1.f871c951adb63d47fdf5.png",
+    "static/media/Publication-2.png": "/hlegal/static/media/Publication-2.f4d0b16ec085cc37ac90.png",
+    "static/media/Illustration.png": "/hlegal/static/media/Illustration.b6884a4e48692f4866be.png",
+    "static/media/Symbol.png": "/hlegal/static/media/Symbol.e688e182716de1f72ef0.png",
+    "static/media/Achievment-2.png": "/hlegal/static/media/Achievment-2.45bb7aa21e9dd1a81da6.png",
+    "static/media/Achievment-4.png": "/hlegal/static/media/Achievment-4.21cf3e343cfa2fc600be.png",
+    "index.html": "/hlegal/index.html",
+    "main.38272802.css.map": "/hlegal/static/css/main.38272802.css.map",
+    "main.f9083735.js.map": "/hlegal/static/js/main.f9083735.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38272802.css",
+    "static/js/main.f9083735.js"
+  ]
+}
