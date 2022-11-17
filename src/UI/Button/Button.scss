@@ -19,4 +19,56 @@
   &:active {
     background: $color_active;
   }
+
+  &--isLoading {
+    background: $color_bg_alt;
+    box-shadow: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 13px);
+      left: calc(50% - 13px);
+      content: '';
+      background-image: url(../../images/Loader.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 26px;
+      height: 26px;
+      transition: all 1s ease;
+      animation-name: rotate;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-play-state: running;
+      transform-origin: center;
+    }
+
+    &:hover {
+      background: $color_bg_alt;
+    }
+
+    &:active {
+      background: $color_bg_alt;
+    }
+  }
+
+  &--sent {
+    color: $main_color;
+    background: $color_bg_alt;
+    box-shadow: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0) translate(0, 0);
+  }
+
+  to {
+    transform: rotate(360deg) translate(0, 0);
+  }
 }

@@ -42,7 +42,7 @@ export const ContactList: React.FC = () => {
         }}
       >
       <Facebook 
-        color={isHover ? '#F0145A' : '#24A3FF'}
+        color={isHover ? '#0085FF' : '#24A3FF'}
         width={38}
         height={38} 
       />

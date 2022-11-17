@@ -77,6 +77,10 @@
       height: 6px;
       content: '';
     }
+
+    &:hover {
+      color: $color_hover;
+    }
   }
 
   &__company {
@@ -98,5 +102,9 @@
     line-height: 20px;
     color: $color_regular;
     text-decoration: none;
+
+    &:hover {
+      color: $color_hover;
+    }
   }
 }

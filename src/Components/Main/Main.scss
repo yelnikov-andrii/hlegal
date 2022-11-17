@@ -41,5 +41,9 @@
     margin: 0 0 10px 0;
     text-decoration: none;
     display: inline-block;
+
+    &:hover {
+      color: $color_hover;
+    }
   }
 }

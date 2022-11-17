@@ -24,7 +24,7 @@ export const PublicationsSection: React.FC = () => {
               />
             ))}
             <div className='publications__more'>
-            <Button>
+            <Button className=''>
               More articles
             </Button>
             </div>

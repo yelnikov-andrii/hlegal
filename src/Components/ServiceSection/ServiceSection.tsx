@@ -24,7 +24,7 @@ export const ServiceSection: React.FC = () => {
         In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
       </p>
       <div className='service__button'>
-        <Button>
+        <Button className=''>
           Free consultation
         </Button>
       </div>
