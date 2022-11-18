@@ -2,7 +2,12 @@ import classNames from 'classnames';
 import React from 'react';
 import { Button } from '../../../UI/Button/Button';
 
-export const Form: React.FC = () => {
+interface Props {
+  formModal: boolean;
+  click: (arg0: boolean) => void;
+}
+
+export const Form: React.FC <Props> = ({ formModal, click }) => {
   const [name, setName] = React.useState('');
   const [errorName, setErrorName] = React.useState(false);
   const [message, setMessage] = React.useState('');
@@ -73,10 +78,29 @@ export const Form: React.FC = () => {
 
   return (
     <div className='contact__form'>
-      <h1 className='contact__header'>
-        We would like to help you
-      </h1>
-    <form className='form' onSubmit={(event) => {
+      {formModal ? (
+        <div className='form__wrapper'>
+          <h1 className='contact__header'>
+            We would like to help you
+          </h1>
+          <button 
+          className='form__close'
+          onClick={() => {
+            click(false);
+          }}
+        >
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+          <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+        </svg>
+        </button>
+        </div>
+        ) : (
+          <h1 className='contact__header'>
+            We would like to help you
+          </h1>
+        )}
+    <form className={formModal ? 'form form--modal' : 'form'} onSubmit={(event) => {
       event.preventDefault();
       submit();
     }}>

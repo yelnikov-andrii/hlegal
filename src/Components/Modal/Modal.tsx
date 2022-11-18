@@ -1,11 +1,11 @@
 import React from 'react';
+import { Form } from '../ContactSection/Form/Form';
 
 interface Props {
-  children: any;
   click: (arg0: boolean) => void;
 }
 
-export const Modal: React.FC <Props> = ({children, click}) => {
+export const Modal: React.FC <Props> = ({click}) => {
   return (
     <div className='modal' onClick={() => {
       click(false);
@@ -13,7 +13,7 @@ export const Modal: React.FC <Props> = ({children, click}) => {
       <div className='modal__content' onClick={(e) => {
         e.stopPropagation();
       }}>
-        {children}
+        <Form click={click} formModal={true} />
       </div>
     </div>
   );

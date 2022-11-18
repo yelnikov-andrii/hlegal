@@ -5,7 +5,6 @@ import { Button } from '../../UI/Button/Button';
 import { Separator } from '../../UI/Separator/Separator';
 import { Modal } from '../Modal/Modal';
 import { UnOrderedList } from './UnOrderedList/UnOrderedList';
-import { Form } from '../ContactSection/Form/Form';
 
 export const ServiceSection: React.FC = () => {
   const [modalOpen, setModalOpen] = React.useState(false);
@@ -44,9 +43,7 @@ export const ServiceSection: React.FC = () => {
         <UnOrderedList list={listService2} />
       </div>
       {modalOpen && (
-        <Modal click={toggleModal}>
-          <Form />
-        </Modal>
+        <Modal click={toggleModal} />
       )}
     </section>
   );

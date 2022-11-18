@@ -8,7 +8,7 @@ export const ContactSection: React.FC = () => {
       <div className="container">
         <div className='contact__block'>
           <ContactList />
-          <Form />
+          <Form formModal={false} click={() => {}} />
         </div>
       </div>
     </section>

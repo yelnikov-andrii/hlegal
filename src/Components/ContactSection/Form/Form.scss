@@ -3,6 +3,20 @@
   flex-direction: column;
   background: $color_bg;
   border-radius: 12px;
+  box-sizing: border-box;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__close {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
 
   &__input {
     background: $color_basic_white;

@@ -11,9 +11,17 @@
   .contact__form {
     box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
     width: 100%;
+
+    @include onMobile {
+      border-radius: 0px;
+    }
   }
 
   &__content {
     width: 60%;
+
+    @include onMobile {
+      width: 100%;
+    }
   }
 }
