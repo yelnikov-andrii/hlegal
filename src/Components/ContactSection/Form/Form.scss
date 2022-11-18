@@ -1,6 +1,8 @@
 .form  {
   display: flex;
   flex-direction: column;
+  background: $color_bg;
+  border-radius: 12px;
 
   &__input {
     background: $color_basic_white;
@@ -43,6 +45,10 @@
     &:focus-visible {
       outline-color: $color_active;
     }
+  }
+
+  &__textarea {
+    resize: none;
   }
 
   &__header {

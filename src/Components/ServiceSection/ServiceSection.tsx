@@ -3,10 +3,17 @@ import { useParams } from 'react-router-dom';
 import { listService1, listService2, mainServicesArr } from '../../data/dataServices';
 import { Button } from '../../UI/Button/Button';
 import { Separator } from '../../UI/Separator/Separator';
+import { Modal } from '../Modal/Modal';
 import { UnOrderedList } from './UnOrderedList/UnOrderedList';
+import { Form } from '../ContactSection/Form/Form';
 
 export const ServiceSection: React.FC = () => {
+  const [modalOpen, setModalOpen] = React.useState(false);
   const params = useParams();
+
+  const toggleModal = (value: boolean) => {
+    setModalOpen(value);
+  }
 
   const selectedService = mainServicesArr.find(service => params.id && service.id === +params.id)
   return (
@@ -24,7 +31,7 @@ export const ServiceSection: React.FC = () => {
         In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
       </p>
       <div className='service__button'>
-        <Button className=''>
+        <Button className='' click={toggleModal} >
           Free consultation
         </Button>
       </div>
@@ -36,6 +43,11 @@ export const ServiceSection: React.FC = () => {
         <UnOrderedList list={listService1} />
         <UnOrderedList list={listService2} />
       </div>
+      {modalOpen && (
+        <Modal click={toggleModal}>
+          <Form />
+        </Modal>
+      )}
     </section>
   );
 };

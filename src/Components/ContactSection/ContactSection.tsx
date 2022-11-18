@@ -8,12 +8,7 @@ export const ContactSection: React.FC = () => {
       <div className="container">
         <div className='contact__block'>
           <ContactList />
-          <div className='contact__form'>
-            <h1 className='contact__header'>
-              We would like to help you
-            </h1>
-            <Form />
-          </div>
+          <Form />
         </div>
       </div>
     </section>

@@ -13,6 +13,20 @@ export const Form: React.FC = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [sent, setSent] = React.useState(false);
 
+  const request = () => {
+    console.log(phone, name);
+        setPhone('');
+        setName('');
+        setIsLoading(true);
+        setTimeout(() => {
+          setIsLoading(false);
+          setSent(true);
+        }, 1000);
+        setTimeout(() => {
+          setSent(false);
+        }, 3000);
+  }
+
   const submit = () => {
     if (name === '') {
       setErrorName(true);
@@ -43,35 +57,14 @@ export const Form: React.FC = () => {
 
     if (email) {
       if (testEmail && name && testPhone) {
-        console.log(phone, name, email);
-        setPhone('');
-        setName('');
+        request();
         setEmail('');
-        setIsLoading(true);
-        setTimeout(() => {
-          setIsLoading(false);
-          setSent(true);
-        }, 2000);
-
-        setTimeout(() => {
-          setSent(false);
-        }, 3000);
       } else {
         return;
       }
     } else {
       if (name && testPhone) {
-        console.log(phone, name);
-        setPhone('');
-        setName('');
-        setIsLoading(true);
-        setTimeout(() => {
-          setIsLoading(false);
-          setSent(true);
-        }, 1000);
-        setTimeout(() => {
-          setSent(false);
-        }, 3000);
+        request();
       } else {
         return;
       }
@@ -79,6 +72,10 @@ export const Form: React.FC = () => {
   }
 
   return (
+    <div className='contact__form'>
+      <h1 className='contact__header'>
+        We would like to help you
+      </h1>
     <form className='form' onSubmit={(event) => {
       event.preventDefault();
       submit();
@@ -97,7 +94,7 @@ export const Form: React.FC = () => {
         disabled={isLoading ? true : sent ? true : false}
       />
       <textarea 
-        className='form__input'
+        className='form__input form__textarea'
         placeholder='Message'
         value={message}
         onChange={(event) => {
@@ -134,10 +131,12 @@ export const Form: React.FC = () => {
         }}
         disabled={isLoading ? true : sent ? true : false}
       />
-      <Button className={isLoading ? 'button--isLoading' : sent ? 'button--sent' : ''}>
-        {isLoading ? '' : sent ? 'sent' : 'Send message'}
+      <Button className={isLoading ? 'button--isLoading' : sent ? 'button--sent' : ''} click={() => {}}>
+        {isLoading ? '' : sent ? 'Sent' : 'Send message'}
       </Button>
     </form>
+    </div>
+    
   );
 };
 

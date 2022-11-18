@@ -1,0 +1,19 @@
+.modal {
+  display: flex;
+  @extend %flexCenter;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba($color: $main_color, $alpha: 0.7);
+
+  .contact__form {
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    width: 100%;
+  }
+
+  &__content {
+    width: 60%;
+  }
+}
